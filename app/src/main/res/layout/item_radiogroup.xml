@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:id="@+id/radiogroup1">
+    <RadioButton
+        android:id="@+id/radiobutton_01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_check_message_alter_theme"
+        android:text="消息"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:checked="true"/>
+    <RadioButton
+        android:id="@+id/radiobutton_02"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_check_friend_alter_theme"
+        android:text="好友"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    <RadioButton
+        android:id="@+id/radiobutton_03"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_check_news_alter_theme"
+        android:text="看点"
+        android:textSize="25sp"
+        android:gravity="center"/>
+    <RadioButton
+        android:id="@+id/radiobutton_04"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:button="@null"
+        android:drawableTop="@drawable/selector_check_friendshare_alter_theme"
+        android:text="动态"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+
+</RadioGroup>

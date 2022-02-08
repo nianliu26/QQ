@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#03A9F4">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/head_magin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="18dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/user_head_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/qqimg"
+            android:onClick="openIcon"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/my_user_friend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="联系人"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/user_addfriend"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/addfriend"
+        android:layout_marginEnd="10dp"/>
+</RelativeLayout>

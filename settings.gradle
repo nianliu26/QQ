@@ -1,0 +1,4 @@
+include ':conjecture_egg'
+include ':test'
+include ':app'
+rootProject.name = "QQ"

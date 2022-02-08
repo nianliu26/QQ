@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#03A9F4">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mes_head_magin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:cardElevation="0dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="18dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/uers_head_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/qqimg"/>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/user_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mes_head_magin"
+        android:layout_toEndOf="@+id/mes_head_magin"
+        android:text="This is my name"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"/>
+    <TextView
+        android:id="@+id/user_online"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/mes_head_magin"
+        android:layout_below="@+id/user_nickname"
+        android:text="This is my onlinePerson"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical"/>
+    <ImageView
+        android:id="@+id/user_add_message"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/selector_button_addfriend"
+        android:layout_marginEnd="10dp"/>
+    <ImageView
+        android:id="@+id/user_takephoto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toStartOf="@+id/user_add_message"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:src="@mipmap/takephoto"/>
+
+</RelativeLayout>

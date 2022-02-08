@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/icon_indicator"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/friendgroup_online_person"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:text="26/100"
+        android:gravity="center"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:lines="1"/>
+
+
+    <TextView
+        android:id="@+id/friend_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/icon_indicator"
+        android:layout_toStartOf="@+id/friendgroup_online_person"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="分组"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>
